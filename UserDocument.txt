@@ -1,0 +1,13 @@
+When developing this code I decided to use the Java programming language to carry out my project. The program is broken into 2 files EchoServer and Requester. EchoServer is stored on the server side and is used to deal with all the client requests which are made.  Requester is stored on the client side and its main objective is to take user input. 
+When the user runs the program the first thing that will be asked is to input the IP address(104.45.148.143). Once a connection has been established with the server. The client will then be asked to input Username and Password. The server then takes these string values and compares them to the contents of the CLIENT1.txt file to see if they match a valid user and password. If they do not match the user is unable to continue. 
+Once verification has been completed the user is presented with a menu. The menu outlines 5 choices that the user can make (The menu is ran on the client side).
+1.	Send files to the server.
+2.	Send files from server to client
+3.	List all files in the Directory. 
+4.	Create a new directory.
+5.	Move to a new directory.
+When the user selects the option which they want to use. The information is sent over the network using the DataOutPutStream (I found this to be more reliable than the ObjectOutPutStream). The work is then carried out by the server and sent back to the user. 
+The sever contains a folder called root which is stored on the desktop and contains all the directories for all the valid users. It also stores the java file EchoSever and the text files needed to run the application. 
+The program properly validates the user logins and the first 4 options of the menu are working correctly. Option 5 is not working properly. As I am writing this I nearly have it working but will not have the time to complete it. 
+Thanks Sean.
+
